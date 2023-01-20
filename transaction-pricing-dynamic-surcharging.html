@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Digital App</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/images/icon/favicon.svg" sizes="32x32" type="image/png">
+
+    <link href="assets/css/salesforce-lightning-design-system-imports.sanitized.css" rel="stylesheet">
+    <link href="assets/css/salesforce-lightning-design-system.min.css" rel="stylesheet">
+    <link href="assets/css/salesforce-lightning-design-system_touch.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+ 
+
+
+<body class="flex">
+    <sidebar class="sidebar flex-shrink-0 px-4">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#313EBF" />
+            <path
+                d="M12.9162 10.532L18.5124 15.9818L12.9159 21.4685C12.6626 21.7105 12.5666 22.0079 12.5953 22.2986C12.6233 22.5811 12.7665 22.8404 12.9601 23.034C13.154 23.2278 13.4141 23.3718 13.6979 23.4054C13.989 23.4398 14.2927 23.3557 14.5466 23.1138L14.5467 23.1138L14.5489 23.1116L21.1227 16.6889L21.1227 16.689L21.1248 16.6869C21.306 16.5057 21.4028 16.2557 21.4149 16.0126C21.4271 15.7691 21.3551 15.5058 21.1626 15.3133L21.1626 15.3133L21.16 15.3107L14.5484 8.88807L14.5484 8.88806L14.5466 8.88635C14.2927 8.64451 13.989 8.56036 13.6979 8.5948C13.4141 8.62837 13.154 8.77235 12.9601 8.96617C12.7665 9.1598 12.6233 9.41906 12.5953 9.70158C12.5666 9.99242 12.6627 10.2899 12.9162 10.532Z"
+                fill="white" stroke="white" stroke-width="0.5" />
+        </svg>
+    </sidebar>
+    <div class="flex-grow flex flex-col">
+        <header class="flex-shrink-0 py-4">
+            <div class="container flex items-center justify-between">
+                <a href="javascript:void(0);" class="inline-block">
+                    <img src="assets/images/logo.svg" class="" alt="logo">
+                </a>
+
+                <div class="">
+                    <ul class="users-profile flex items-center">
+                        <li> me </li>
+                        <li> pj </li>
+                        <li> jc </li>
+                        <li class="add-new-avatar">
+                            <a href="javascript:void(0);" class="inline-block">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9599 1.05298C9.83866 1.05298 7.76509 1.68199 6.00138 2.86047C4.23766 4.03894 2.86301 5.71396 2.05126 7.6737C1.23951 9.63344 1.02712 11.7899 1.44095 13.8703C1.85477 15.9508 2.87623 17.8618 4.37615 19.3617C5.87607 20.8616 7.78708 21.8831 9.86752 22.2969C11.948 22.7107 14.1044 22.4983 16.0641 21.6866C18.0239 20.8748 19.6989 19.5002 20.8774 17.7365C22.0559 15.9728 22.6849 13.8992 22.6849 11.778C22.6815 8.93456 21.5505 6.20856 19.5399 4.19796C17.5293 2.18736 14.8033 1.05633 11.9599 1.05298V1.05298ZM16.8349 12.753H12.9349V16.653C12.9349 16.9116 12.8321 17.1596 12.6493 17.3424C12.4664 17.5253 12.2185 17.628 11.9599 17.628C11.7013 17.628 11.4533 17.5253 11.2704 17.3424C11.0876 17.1596 10.9849 16.9116 10.9849 16.653V12.753H7.08487C6.82628 12.753 6.57829 12.6503 6.39544 12.4674C6.21259 12.2846 6.10987 12.0366 6.10987 11.778C6.10987 11.5194 6.21259 11.2714 6.39544 11.0885C6.57829 10.9057 6.82628 10.803 7.08487 10.803H10.9849V6.90298C10.9849 6.64439 11.0876 6.3964 11.2704 6.21355C11.4533 6.0307 11.7013 5.92798 11.9599 5.92798C12.2185 5.92798 12.4664 6.0307 12.6493 6.21355C12.8321 6.3964 12.9349 6.64439 12.9349 6.90298V10.803H16.8349C17.0935 10.803 17.3415 10.9057 17.5243 11.0885C17.7071 11.2714 17.8099 11.5194 17.8099 11.778C17.8099 12.0366 17.7071 12.2846 17.5243 12.4674C17.3415 12.6503 17.0935 12.753 16.8349 12.753Z"
+                                        fill="#232122" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="auth-layout overflow-y-auto px-4 ">
+            <div class="container mx-auto">
+                <a href="form-template.html" class="flex items-center px-1 py-1 text-black underline">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9329 16.2362L10.5976 12.0142L14.9329 7.76393C15.528 7.19722 14.5646 6.23382 13.9695 6.80053L9.03917 11.6175C8.84083 11.8159 8.81249 12.1842 9.01084 12.3826L13.9695 17.1996C14.5646 17.7663 15.528 16.8029 14.9329 16.2362Z" fill="#232122"/>
+                    </svg>
+                        
+                    <span>Back</span>
+                </a>
+                <h4 class="text-2xl mt-4 mb-4 font-bold flex items-center">Transactions and Pricing <div class="flex items-center ml-2 info_toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V11H13V17ZM13 9H11V7H13V9Z" fill="rgb(49, 62, 191)"/></svg></div></h4>
+                    <div class="progress-bar-steps">
+                        <div class="progress-bar-step">
+                            <div class="progress-bar-trake"></div>
+                            <small>Transaction Details</small>
+                        </div>
+                        <div class="progress-bar-step is-filled">
+                            <div class="progress-bar-trake"></div>
+                            <small>Confirm pricing and fees</small>
+                        </div>
+                        <div class="progress-bar-step">
+                            <div class="progress-bar-trake"></div>
+                            <small>Summary</small>
+                        </div>
+                    </div>
+                    <div class="mb-8 transaction-price-info transition">
+                        <div class="message-panel has-info">
+                            <div class="flex items-start mb-2">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V11H13V17ZM13 9H11V7H13V9Z" fill="currentColor"/>
+                                </svg>                                   
+                                <span class="ml-2 flex-grow text-xl">What you need to complete this section</span>
+                            </div>
+                            <p>The Owners/Directors section requires you to confirm the details of every Owner in your business who owns 25% or more shares. Then, you will also need to nominate a Director or Authorized Representative to verify your application with us before we can process it for approval. You can select up to 2 people to act as Authorized Representatives, however we only need one person to sign for us to be able to proceed with the application.  </p>
+                        </div>
+                    </div>
+                <div class="mb-8 business-transaction table_width">
+                    <h5 class="text-xl font-normal mb-4">Transaction fees</h5>
+                    <!-- text field -->
+                   
+                    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered text-left" aria-label="Example table of Opportunities with no row hovers">
+                        <thead>
+                        <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                        <div class="slds-truncate" title="Fee Type">Fee Type</div>
+                        </th>
+                        <th class="" scope="col">
+                        <div class="slds-truncate text-center" title="Price Per Transaction/Instance">Price Per Transaction/<br>Instance</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="">
+                                <div class="field-group check-bg-blue checked-field-group flex flex-col relative font-normal">
+                                    <input type="checkbox">
+                                    <label for="checkbox" class="cursor-pointer text-center">
+                                        <div class="checkbox-squre checked-field"></div>
+                                        <span class="flex-grow">Select all</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="">
+                                <div class="field-group check-bg-blue checked-field-group flex flex-col relative font-normal">
+                                    <input type="checkbox">
+                                    <label for="checkbox" class="cursor-pointer text-center">
+                                        <div class="checkbox-squre checked-field"></div>
+                                        <span class="flex-grow">Select all</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="slds-hint-parent">
+                        <td data-label="Visa/Mastercard" scope="row">
+                        <div class="slds-truncate" title="Visa/Mastercard">
+                        Visa/Mastercard
+                        </div>
+                        </td>
+                        <td data-label="Percentage">
+                        <div class="slds-truncate text-center" title="percentage">$0.40 and 1.65%</div>
+                        </td>
+                        <td data-label="Close Date">
+                        <div class="slds-truncate" title="">
+                            <div class="field-group check-bg-blue checked-field-group flex flex-col relative ">
+                                <input type="checkbox" checked>
+                                <label for="checkbox" class="cursor-pointer text-center">
+                                    <div class="checkbox-squre checked-field"></div>
+                                    <span class="flex-grow">Business Pays</span>
+                                </label>
+                            </div>
+                        </div>
+                        </td>
+                        <td data-label="Prospecting">
+                        <div class="slds-truncate" title=""></div>
+                        </td>
+
+                        </tr>
+                        <tr class="slds-hint-parent">
+                        <td data-label="American Express" scope="row">
+                        <div class="slds-truncate" title="American Express">
+                        American Express
+                        </div>
+                        </td>
+                        <td data-label="Percentage">
+                        <div class="slds-truncate text-center" title="percentage">$0.60 and 1.85%</div>
+                        </td>
+                        <td data-label="">
+                        <div class="slds-truncate" title="">
+                            <div class="field-group check-bg-blue checked-field-group flex flex-col relative ">
+                                <input type="checkbox">
+                                <label for="checkbox" class="cursor-pointer text-center">
+                                    <div class="checkbox-squre checked-field"></div>
+                                    <span class="flex-grow">Business Pays</span>
+                                </label>
+                            </div>
+                        </div>
+                        </td>
+                        <td data-label="Prospecting">
+                        <div class="slds-truncate" title="">
+                            <div class="field-group check-bg-blue checked-field-group flex flex-col relative ">
+                                <input type="checkbox">
+                                <label for="checkbox" class="cursor-pointer text-center">
+                                    <div class="checkbox-squre checked-field"></div>
+                                    <span class="flex-grow">Customer Pays</span>
+                                </label>
+                            </div>
+                        </div>
+                        </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td data-label="Direct Debit" scope="row">
+                            <div class="slds-truncate" title="Direct Debit">
+                            Direct Debit
+                            </div>
+                            </td>
+                            <td data-label="Percentage">
+                            <div class="slds-truncate text-center" title="percentage">$0.40</div>
+                            </td>
+                            <td data-label="Close Date">
+                            <div class="slds-truncate" title="">
+                                <div class="field-group check-bg-blue checked-field-group flex flex-col relative">
+                                    <input type="checkbox">
+                                    <label for="checkbox" class="cursor-pointer text-center">
+                                        <div class="checkbox-squre checked-field"></div>
+                                        <span class="flex-grow">Business Pays</span>
+                                    </label>
+                                </div>
+                            </div>
+                            </td>
+                            <td data-label="Prospecting">
+                            <div class="slds-truncate" title=""></div>
+                            </td>
+    
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td data-label="3DS2" scope="row">
+                                <div class="slds-truncate" title="3DS2">
+                                3DS2
+                                </div>
+                                </td>
+                                <td data-label="Percentage">
+                                <div class="slds-truncate text-center" title="percentage">$1.40</div>
+                                </td>
+                                <td data-label="">
+                                <div class="slds-truncate" title="">
+                                    <div class="field-group check-bg-blue checked-field-group flex flex-col relative">
+                                        <input type="checkbox">
+                                        <label for="checkbox" class="cursor-pointer text-center">
+                                            <div class="checkbox-squre checked-field"></div>
+                                            <span class="flex-grow">Business Pays</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                </td>
+                                <td data-label="Prospecting">
+                                <div class="slds-truncate" title="">
+                                    <div class="field-group check-bg-blue checked-field-group flex flex-col relative">
+                                        <input type="checkbox">
+                                        <label for="checkbox" class="cursor-pointer text-center">
+                                            <div class="checkbox-squre checked-field"></div>
+                                            <span class="flex-grow">Customer Pays</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mb-8 business-transaction table_width">
+                    <h5 class="text-xl font-normal mb-4">Other fees</h5>
+                    <!-- text field -->
+                   
+                    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered text-left" aria-label="Example table of Opportunities with no row hovers">
+                        <thead>
+                        <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                        <div class="slds-truncate" title="Fee Type">Fee Type</div>
+                        </th>
+                        <th class="" scope="col">
+                        <div class="slds-truncate text-center" title="Price Per Transaction/Instance">Price Per Transaction/<br>Instance</div>
+                        </th>
+                        <th class="" scope="col">
+                        <div class="slds-truncate" title=""></div>
+                        </th>
+                        <th class="" scope="col">
+                        <div class="slds-truncate" title=""></div>
+                        </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="slds-hint-parent">
+                        <td data-label="Failed transaction" scope="row">
+                        <div class="slds-truncate" title="Failed transaction">
+                            Failed transaction
+                        </div>
+                        </td>
+                        <td data-label="Percentage">
+                        <div class="slds-truncate text-center" title="percentage">$0.40 and 1.65%</div>
+                        </td>
+                        <td data-label="Close Date">
+                        <div class="slds-truncate" title="">
+                            <div class="field-group check-bg-blue checked-field-group flex flex-col relative ">
+                                <input type="checkbox">
+                                <label for="checkbox" class="cursor-pointer text-center">
+                                    <div class="checkbox-squre checked-field"></div>
+                                    <span class="flex-grow">Business Pays</span>
+                                </label>
+                            </div>
+                        </div>
+                        </td>
+                        <td data-label="Prospecting">
+                        <div class="slds-truncate" title=""></div>
+                        </td>
+
+                        </tr>
+                        <tr class="slds-hint-parent">
+                        <td data-label="Chargeback" scope="row">
+                        <div class="slds-truncate" title="Chargeback">
+                            Chargeback
+                        </div>
+                        </td>
+                        <td data-label="Percentage">
+                        <div class="slds-truncate text-center" title="percentage">$0.60 and 1.85%</div>
+                        </td>
+                        <td data-label="">
+                        <div class="slds-truncate" title="">
+                            <div class="field-group check-bg-blue checked-field-group flex flex-col relative ">
+                                <input type="checkbox">
+                                <label for="checkbox" class="cursor-pointer text-center">
+                                    <div class="checkbox-squre checked-field"></div>
+                                    <span class="flex-grow">Business Pays</span>
+                                </label>
+                            </div>
+                        </div>
+                        </td>
+                        <td data-label="Prospecting">
+                        <div class="slds-truncate" title="">
+                            <div class="field-group check-bg-blue checked-field-group flex flex-col relative ">
+                                <input type="checkbox">
+                                <label for="checkbox" class="cursor-pointer text-center">
+                                    <div class="checkbox-squre checked-field"></div>
+                                    <span class="flex-grow">Customer Pays</span>
+                                </label>
+                            </div>
+                        </div>
+                        </td>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <td data-label="Failed Real-Time Trans..." scope="row">
+                            <div class="slds-truncate" title="Failed Real-Time Trans...">
+                                Failed Real-Time Trans...
+                            </div>
+                            </td>
+                            <td data-label="Percentage">
+                            <div class="slds-truncate text-center" title="percentage">$0.40</div>
+                            </td>
+                            <td data-label="Close Date">
+                            <div class="slds-truncate" title="">
+                                <div class="field-group check-bg-blue checked-field-group flex flex-col relative">
+                                    <input type="checkbox">
+                                    <label for="checkbox" class="cursor-pointer text-center">
+                                        <div class="checkbox-squre checked-field"></div>
+                                        <span class="flex-grow">Business Pays</span>
+                                    </label>
+                                </div>
+                            </div>
+                            </td>
+                            <td data-label="Prospecting">
+                            <div class="slds-truncate" title=""></div>
+                            </td>
+    
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td data-label="3DS2" scope="row">
+                                <div class="slds-truncate" title="3DS2">
+                                3DS2
+                                </div>
+                                </td>
+                                <td data-label="Percentage">
+                                <div class="slds-truncate text-center" title="percentage">$1.40</div>
+                                </td>
+                                <td data-label="">
+                                <div class="slds-truncate" title="">
+                                    <div class="field-group check-bg-blue checked-field-group flex flex-col relative">
+                                        <input type="checkbox">
+                                        <label for="checkbox" class="cursor-pointer text-center">
+                                            <div class="checkbox-squre checked-field"></div>
+                                            <span class="flex-grow">Business Pays</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                </td>
+                                <td data-label="Prospecting">
+                                <div class="slds-truncate" title="">
+                                    <div class="field-group check-bg-blue checked-field-group flex flex-col relative">
+                                        <input type="checkbox">
+                                        <label for="checkbox" class="cursor-pointer text-center">
+                                            <div class="checkbox-squre checked-field"></div>
+                                            <span class="flex-grow">Customer Pays</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mb-8 business-transaction table_width">
+                    <h5 class="text-xl font-normal mb-4">Confirm acknowledgement</h5>
+                    <p class="">I/We confirm the pricing was presented to us before we finalised our applicaiton, an that we accept the pricing and fees laid out by <Software company> and Payrix (AFSL License No. 418105).</p>
+                    <div class="slds-truncate" title="">
+                        <div class="field-group check-bg-blue checked-field-group flex flex-col relative mt-4">
+                            <input type="checkbox">
+                            <label for="checkbox" class="cursor-pointer text-center">
+                                <div class="checkbox-squre checked-field"></div>
+                                <span class="flex-grow">I confirm</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 text-right">
+                        <button type="submit" class="btn btn-primary mt-4 ml-auto mr-0">
+                            <span>Confirm</span>
+                            <svg width="9" height="16" class="ml-2" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.58969 2.35192L6.37009 7.9812L0.58969 13.6483C-0.203698 14.4039 1.08084 15.6884 1.87422 14.9328L8.44801 8.51013C8.71248 8.24567 8.75026 7.75452 8.48579 7.49006L1.87422 1.06739C1.08084 0.311782 -0.203698 1.59632 0.58969 2.35192Z" fill="currentcolor"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+
+                <div class="text-center">
+                    <img src="assets/images/powered-payrix-logo.svg" class="mx-auto" alt="logo">
+
+                    <ul class="flex items-center text-sm justify-center mt-1">
+                        <li class="px-2">
+                            <a href="javascript:void(0)" class="inline-block">
+                                Terms and Conditions
+                            </a>
+                        </li>
+                        |
+                        <li class="px-2">
+                            <a href="javascript:void(0)" class="inline-block">
+                                Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src=
+        "https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity=
+"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function() {
+    $('.info_toggle').on('click', function () {
+        $('.transaction-price-info').toggleClass('open');
+    });
+});
+    </script>
+</body>
+
+</html>
